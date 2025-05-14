@@ -16,8 +16,8 @@ O script **separa arquivos em lotes de até 2.000 arquivos**, movendo-os de uma 
 
 1. **Baixe ou clone este repositório**.
 2. **Coloque o script `separar_arquivos.bat` na pasta onde deseja executar**.
-3. Quando o script for executado pela primeira vez, ele **irá criar as pastas** `pasta_origem` e `pasta_destino` se elas não existirem.
-4. **Adicione os arquivos que deseja separar na pasta `pasta_origem`**.
+3. Quando o script for executado pela primeira vez, ele **irá criar as pastas** `Origem` e `Destino` se elas não existirem.
+4. **Adicione os arquivos que deseja separar na pasta `Origem`**.
 5. **Execute novamente o script** para separar os arquivos em pastas de 2.000 arquivos.
 6. Após a execução, o script informará a quantidade de arquivos movidos e as pastas criadas.
 
@@ -26,12 +26,12 @@ O script **separa arquivos em lotes de até 2.000 arquivos**, movendo-os de uma 
 - **Estrutura das pastas após execução:**
   
   ```
-  pasta_origem/
+  Origem/
     arquivo1.txt
     arquivo2.txt
     ...
   
-  pasta_destino/
+  Destino/
     saida_1/
       arquivo1.txt
       arquivo2.txt
@@ -54,16 +54,18 @@ Durante a execução, o script exibirá as seguintes mensagens:
 ## Exemplo de Saída no Console
 
 ```
+
 ============================================
 Iniciando separação de arquivos...
-Pasta base: C:\Users\Usuario\Documents\
-Pasta de origem: C:\Users\Usuario\Documents\pasta_origem\
-Pasta de destino: C:\Users\Usuario\Documents\pasta_destino\
-Arquivos por pasta: 2000
+============================================
+
+[INFO] Pasta de origem criada: C:\Users\Usuario\Documents\Origem\
+[INFO] Pasta de destino criada: C:\Users\Usuario\Documents\Destino\
+
 ============================================
 As pastas necessárias foram criadas.
 Coloque os arquivos que deseja separar em:
-    C:\Users\Usuario\Documents\pasta_origem
+   C:\Users\Usuario\Documents\Origem\
 Depois, execute este script novamente.
 ============================================
 Pressione uma tecla para continuar...
